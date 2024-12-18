@@ -121,6 +121,9 @@ h1 {
     top: 4px;
     right: 0;
     z-index: 2;
+    transition: cursor 0.3s ease-out,
+        color 0.3s ease-out,
+        background-color 0.3s ease-out;
 }
 
 .fa-share:active,
