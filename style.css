@@ -234,11 +234,6 @@ footer {
         color: hsl(212, 23%, 69%);
     }
 
-    .share__item i {
-        width: 20px;
-        height: 20px;
-    }
-
     .triangle {
         display: none;
     }
