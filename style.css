@@ -1,0 +1,180 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+h1,
+footer p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.main__content {
+    flex-grow: 1;
+}
+
+.card__container {
+    width: 60%;
+    margin: 70px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drawers__img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.card__content {
+    width: 50%;
+    margin: 30px;
+}
+
+.card__content .show {
+    display: flex;
+}
+
+.card__title {
+    color: hsl(217, 19%, 35%);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.card__text {
+    color: hsl(214, 17%, 51%);
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.card__presentation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+}
+
+.character {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.character__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.character__presentation {
+    margin-right: 20px;
+}
+
+.name {
+    font-weight: 800;
+    color: hsl(217, 19%, 35%)
+}
+
+.datum {
+    color: hsl(214, 17%, 51%);
+    margin-top: 5px;
+}
+
+.fa-share {
+    font-size: 20px;
+    background-color: hsl(210, 46%, 95%);
+    color: hsl(217, 19%, 35%);
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    z-index: 2;
+}
+
+.fa-share:active,
+.fa-share:focus,
+.fa-share:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(214, 17%, 51%);
+}
+
+.share__item {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 72px;
+    right: -70px;
+    z-index: 1;
+    background-color: hsl(217, 19%, 35%);
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.text {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 5px;
+}
+
+.share__item i {
+    width: 15px;
+    height: 15px;
+    color: hsl(0, 0%, 100%);
+    margin-left: 10px;
+}
+
+.triangle {
+    position: absolute;
+    right: 84px;
+    top: 48px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 10px 0 10px;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+footer {
+    font-size: 18px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
